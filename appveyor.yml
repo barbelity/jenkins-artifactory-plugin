@@ -36,8 +36,8 @@ environment:
   USE_UNSUPPORTED_CONAN_WITH_PYTHON_2: true
 
   matrix:
-    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      BITESTS_ARTIFACTORY_PIP_ENV: C:\\projects\\jenkins-artifactory-plugin\\pip-venv\\Scripts\\\activate.ps1
+#    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+#      BITESTS_ARTIFACTORY_PIP_ENV: C:\\projects\\jenkins-artifactory-plugin\\pip-venv\\Scripts\\\activate.ps1
     - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
       BITESTS_ARTIFACTORY_PIP_ENV: source /home/appveyor/projects/jenkins-artifactory-plugin/pip-venv/bin/activate
 
@@ -56,7 +56,8 @@ before_test:
   - sh: export GRADLE_HOME=/home/appveyor/.sdkman/candidates/gradle/current && sdk default gradle || sdk install gradle
   - sh: export PYTHON=$HOME/venv3.7.7
   - sh: python -m venv pip-venv
-  - sh: python -version
+  - sh: python --version
+  - sh: env
   - sh: touch tests.log
   - sh: tail -f tests.log &
 
