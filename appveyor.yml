@@ -56,6 +56,8 @@ before_test:
   - sh: export GRADLE_HOME=/home/appveyor/.sdkman/candidates/gradle/current && sdk default gradle || sdk install gradle
   - sh: export PYTHON=$HOME/venv3.7.7
   - sh: python -m venv pip-venv
+  - sh: pwd
+  - sh: ls -al
   - sh: python --version
   - sh: env
   - sh: touch tests.log
