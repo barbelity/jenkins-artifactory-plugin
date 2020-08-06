@@ -36,7 +36,7 @@ environment:
   USE_UNSUPPORTED_CONAN_WITH_PYTHON_2: true
 
   matrix:
-    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2019
+    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
       JENKINS_PIP_ENV_INIT: C:\\projects\\jenkins-artifactory-plugin\\pip-venv\\Scripts\\\activate.ps1
 #    - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
 #      JENKINS_PIP_ENV_INIT: ""
