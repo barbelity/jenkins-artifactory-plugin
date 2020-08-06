@@ -37,7 +37,7 @@ environment:
 
   matrix:
     - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      JENKINS_PIP_ENV_INIT: C:\\projects\\jenkins-artifactory-plugin\\pip-venv\\Scripts\\\activate.ps1
+      JENKINS_PIP_ENV_INIT: C:\\projects\\jenkins-artifactory-plugin\\pip-venv\\Scripts\\activate.ps1
 #    - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
 #      JENKINS_PIP_ENV_INIT: ""
 # && source /home/appveyor/projects/jenkins-artifactory-plugin/pip-venv/bin/activate
