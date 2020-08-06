@@ -25,4 +25,10 @@ node("TestSlave") {
 
     stage "Publish build info"
     rtServer.publishBuildInfo buildInfo
+
+    stage "Clean pip env"
+    sh '''
+        $pipInitScript
+        pip freeze | xargs pip uninstall -y
+    '''
 }

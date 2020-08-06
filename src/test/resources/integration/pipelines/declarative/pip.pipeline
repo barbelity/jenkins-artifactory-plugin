@@ -45,4 +45,10 @@ node("TestSlave") {
             buildName: buildName,
             buildNumber: buildNumber
     )
+
+    stage "Clean pip env"
+    sh '''
+        ${env.JENKINS_PIP_ENV_INIT}
+        pip freeze | xargs pip uninstall -y
+    '''
 }
