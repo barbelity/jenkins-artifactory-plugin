@@ -39,7 +39,7 @@ environment:
 #    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
 #      JENKINS_PIP_ENV_INIT: C:\\projects\\jenkins-artifactory-plugin\\pip-venv\\Scripts\\\activate.ps1
     - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
-      JENKINS_PIP_ENV_INIT: env
+      JENKINS_PIP_ENV_INIT: ""
 # && source /home/appveyor/projects/jenkins-artifactory-plugin/pip-venv/bin/activate
 services:
   - docker
@@ -56,6 +56,7 @@ before_test:
   - sh: export GRADLE_HOME=/home/appveyor/.sdkman/candidates/gradle/current && sdk default gradle || sdk install gradle
   - sh: export PYTHON=$HOME/venv3.7.7
   - sh: python -m venv pip-venv
+  - sh: source /home/appveyor/projects/jenkins-artifactory-plugin/pip-venv/bin/activate
   - sh: pwd
   - sh: ls -al
   - sh: python --version
