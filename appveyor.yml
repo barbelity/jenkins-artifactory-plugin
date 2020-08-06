@@ -59,6 +59,7 @@ before_test:
   - sh: pwd
   - sh: ls -al
   - sh: python --version
+  - sh: pip --version
   - sh: env
   - sh: touch tests.log
   - sh: tail -f tests.log &
