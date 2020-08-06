@@ -38,8 +38,8 @@ environment:
   matrix:
     - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
       JENKINS_PIP_ENV_INIT: C:\\projects\\jenkins-artifactory-plugin\\pip-venv\\Scripts\\activate.bat
-#    - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
-#      JENKINS_PIP_ENV_INIT: ""
+    - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
+      JENKINS_PIP_ENV_INIT: ""
 
 services:
   - docker

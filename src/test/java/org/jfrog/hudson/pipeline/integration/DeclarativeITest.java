@@ -16,7 +16,7 @@ public class DeclarativeITest extends CommonITestsPipeline {
         super.downloadByPatternTest("declarative:downloadByPattern test");
     }
 
-    /*@Test
+    @Test
     public void downloadByAqlTest() throws Exception {
         super.downloadByAqlTest("declarative:downloadByAql test");
     }
@@ -99,14 +99,14 @@ public class DeclarativeITest extends CommonITestsPipeline {
     @Test
     public void conanTest() throws Exception {
         super.conanTest("conan", "declarative:conan test");
-    }*/
+    }
 
     @Test
     public void pipTest() throws Exception {
         super.pipTest("pip", "declarative:pip test", "my-pip-module");
     }
 
-    /*@Test
+    @Test
     public void nugetTest() throws Exception {
         super.nugetTest("nuget", "declarative:nuget test", "packagesconfig");
     }
@@ -154,5 +154,5 @@ public class DeclarativeITest extends CommonITestsPipeline {
     @Test
     public void jfPipelinesReportStatusTest() throws Exception {
         super.jfPipelinesReportStatusTest();
-    }*/
+    }
 }
