@@ -106,7 +106,7 @@ public class DeclarativeITest extends CommonITestsPipeline {
         super.pipTest("pip", "declarative:pip test", "my-pip-module");
     }
 
-    @Test
+    /*@Test
     public void nugetTest() throws Exception {
         super.nugetTest("nuget", "declarative:nuget test", "packagesconfig");
     }
@@ -116,7 +116,7 @@ public class DeclarativeITest extends CommonITestsPipeline {
         super.dotnetTest("dotnet", "declarative:dotnet test", "reference");
     }
 
-    /*@Test
+    @Test
     public void setPropsTest() throws Exception {
         super.setPropsTest("declarative:setProps test");
     }

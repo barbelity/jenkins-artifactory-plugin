@@ -49,7 +49,7 @@ node("TestSlave") {
 
     stage "Clean pip env"
     sh '''
-        ${pipEnvInit}
+        $pipEnvInit
         pip freeze | xargs pip uninstall -y
     '''
 }
