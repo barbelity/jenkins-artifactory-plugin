@@ -16,7 +16,7 @@ public class DeclarativeITest extends CommonITestsPipeline {
         super.downloadByPatternTest("declarative:downloadByPattern test");
     }
 
-    @Test
+    /*@Test
     public void downloadByAqlTest() throws Exception {
         super.downloadByAqlTest("declarative:downloadByAql test");
     }
@@ -99,7 +99,7 @@ public class DeclarativeITest extends CommonITestsPipeline {
     @Test
     public void conanTest() throws Exception {
         super.conanTest("conan", "declarative:conan test");
-    }
+    }*/
 
     @Test
     public void pipTest() throws Exception {
@@ -116,7 +116,7 @@ public class DeclarativeITest extends CommonITestsPipeline {
         super.dotnetTest("dotnet", "declarative:dotnet test", "reference");
     }
 
-    @Test
+    /*@Test
     public void setPropsTest() throws Exception {
         super.setPropsTest("declarative:setProps test");
     }
@@ -154,5 +154,5 @@ public class DeclarativeITest extends CommonITestsPipeline {
     @Test
     public void jfPipelinesReportStatusTest() throws Exception {
         super.jfPipelinesReportStatusTest();
-    }
+    }*/
 }

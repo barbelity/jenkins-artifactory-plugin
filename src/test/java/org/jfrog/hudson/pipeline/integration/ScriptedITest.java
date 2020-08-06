@@ -16,7 +16,7 @@ public class ScriptedITest extends CommonITestsPipeline {
         super.downloadByPatternTest("scripted:downloadByPattern test");
     }
 
-    @Test
+    /*@Test
     public void downloadByAqlTest() throws Exception {
         super.downloadByAqlTest("scripted:downloadByAql test");
     }
@@ -99,7 +99,7 @@ public class ScriptedITest extends CommonITestsPipeline {
     @Test
     public void conanTest() throws Exception {
         super.conanTest("conan", "scripted:conan test");
-    }
+    }*/
 
     @Test
     public void pipTest() throws Exception {
@@ -116,7 +116,7 @@ public class ScriptedITest extends CommonITestsPipeline {
         super.dotnetTest("dotnet", "scripted:dotnet test", "reference");
     }
 
-    @Test
+    /*@Test
     public void setPropsTest() throws Exception {
         super.setPropsTest("scripted:setProps test");
     }
@@ -149,5 +149,5 @@ public class ScriptedITest extends CommonITestsPipeline {
     @Test
     public void appendBuildInfoTest() throws Exception {
         super.appendBuildInfoTest("scripted:appendBuildInfo test");
-    }
+    }*/
 }
