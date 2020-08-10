@@ -372,7 +372,7 @@ public class CommonITestsPipeline extends PipelineTestBase {
             Module module = getAndAssertModule(buildInfo, moduleName);
             assertTrue(module.getDependencies() != null && module.getDependencies().size() > 0);
         } finally {
-            deleteBuild(artifactoryClient, buildName);
+            //deleteBuild(artifactoryClient, buildName);
         }
     }
 
@@ -384,7 +384,7 @@ public class CommonITestsPipeline extends PipelineTestBase {
             Module module = getAndAssertModule(buildInfo, moduleName);
             assertTrue(module.getDependencies() != null && module.getDependencies().size() > 0);
         } finally {
-            deleteBuild(artifactoryClient, buildName);
+            //deleteBuild(artifactoryClient, buildName);
         }
     }
 
