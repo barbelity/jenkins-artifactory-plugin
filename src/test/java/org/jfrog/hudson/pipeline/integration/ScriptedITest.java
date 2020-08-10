@@ -11,7 +11,7 @@ public class ScriptedITest extends CommonITestsPipeline {
         super(PipelineType.SCRIPTED);
     }
 
-    /*@Test
+    @Test
     public void downloadByPatternTest() throws Exception {
         super.downloadByPatternTest("scripted:downloadByPattern test");
     }
@@ -104,7 +104,7 @@ public class ScriptedITest extends CommonITestsPipeline {
     @Test
     public void pipTest() throws Exception {
         super.pipTest("pip", "scripted:pip test", "my-pip-module");
-    }*/
+    }
 
     @Test
     public void nugetTest() throws Exception {
@@ -116,7 +116,7 @@ public class ScriptedITest extends CommonITestsPipeline {
         super.dotnetTest("dotnet", "scripted:dotnet test", "reference");
     }
 
-    /*@Test
+    @Test
     public void setPropsTest() throws Exception {
         super.setPropsTest("scripted:setProps test");
     }
@@ -149,5 +149,5 @@ public class ScriptedITest extends CommonITestsPipeline {
     @Test
     public void appendBuildInfoTest() throws Exception {
         super.appendBuildInfoTest("scripted:appendBuildInfo test");
-    }*/
+    }
 }

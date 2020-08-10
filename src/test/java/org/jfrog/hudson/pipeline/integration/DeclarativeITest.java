@@ -11,7 +11,7 @@ public class DeclarativeITest extends CommonITestsPipeline {
         super(PipelineType.DECLARATIVE);
     }
 
-    /*@Test
+    @Test
     public void downloadByPatternTest() throws Exception {
         super.downloadByPatternTest("declarative:downloadByPattern test");
     }
@@ -104,7 +104,7 @@ public class DeclarativeITest extends CommonITestsPipeline {
     @Test
     public void pipTest() throws Exception {
         super.pipTest("pip", "declarative:pip test", "my-pip-module");
-    }*/
+    }
 
     @Test
     public void nugetTest() throws Exception {
@@ -116,7 +116,7 @@ public class DeclarativeITest extends CommonITestsPipeline {
         super.dotnetTest("dotnet", "declarative:dotnet test", "reference");
     }
 
-    /*@Test
+    @Test
     public void setPropsTest() throws Exception {
         super.setPropsTest("declarative:setProps test");
     }
@@ -154,5 +154,5 @@ public class DeclarativeITest extends CommonITestsPipeline {
     @Test
     public void jfPipelinesReportStatusTest() throws Exception {
         super.jfPipelinesReportStatusTest();
-    }*/
+    }
 }
